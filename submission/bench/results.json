@@ -1,0 +1,636 @@
+{
+ "decider_model": "strands-decider-2b-hobson-v19",
+ "rows": [
+  {
+   "i": 0,
+   "expected": {
+    "sufficient_info": "yes",
+    "high_impact": "yes",
+    "needs_escalation": "no",
+    "action": "prioritize"
+   },
+   "decider": {
+    "sufficient_info": {
+     "label": "yes",
+     "confidence": 0.9162
+    },
+    "high_impact": {
+     "label": "yes",
+     "confidence": 0.6424
+    },
+    "needs_escalation": {
+     "label": "no",
+     "confidence": 0.7482
+    },
+    "action": {
+     "label": "prioritize",
+     "confidence": 0.5423
+    }
+   },
+   "decider_ms": 6429.032400001233,
+   "decider_server_ms": 5103.5,
+   "llm": {
+    "sufficient_info": {
+     "label": "yes",
+     "confidence": 1.0
+    },
+    "high_impact": {
+     "label": "no",
+     "confidence": 0.95
+    },
+    "needs_escalation": {
+     "label": "no",
+     "confidence": 0.9
+    },
+    "action": {
+     "label": "prioritize",
+     "confidence": 0.85
+    }
+   },
+   "llm_ms": 27829.139000001305,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 1,
+   "expected": {
+    "sufficient_info": "yes",
+    "high_impact": "no",
+    "needs_escalation": "no",
+    "action": "prioritize"
+   },
+   "decider": {
+    "sufficient_info": {
+     "label": "yes",
+     "confidence": 0.8881
+    },
+    "high_impact": {
+     "label": "no",
+     "confidence": 0.8393
+    },
+    "needs_escalation": {
+     "label": "no",
+     "confidence": 0.7673
+    },
+    "action": {
+     "label": "prioritize",
+     "confidence": 0.5016
+    }
+   },
+   "decider_ms": 6572.52840000001,
+   "decider_server_ms": 5802.6,
+   "llm": {
+    "sufficient_info": {
+     "label": "yes",
+     "confidence": 1.0
+    },
+    "high_impact": {
+     "label": "no",
+     "confidence": 1.0
+    },
+    "needs_escalation": {
+     "label": "no",
+     "confidence": 1.0
+    },
+    "action": {
+     "label": "prioritize",
+     "confidence": 1.0
+    }
+   },
+   "llm_ms": 28665.83089999949,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 2,
+   "expected": {
+    "sufficient_info": "yes",
+    "high_impact": "yes",
+    "needs_escalation": "no",
+    "action": "investigate"
+   },
+   "decider": {
+    "sufficient_info": {
+     "label": "yes",
+     "confidence": 0.927
+    },
+    "high_impact": {
+     "label": "yes",
+     "confidence": 0.7981
+    },
+    "needs_escalation": {
+     "label": "no",
+     "confidence": 0.7615
+    },
+    "action": {
+     "label": "prioritize",
+     "confidence": 0.5774
+    }
+   },
+   "decider_ms": 6955.191800001558,
+   "decider_server_ms": 6042.1,
+   "llm": {
+    "sufficient_info": {
+     "label": "yes",
+     "confidence": 0.95
+    },
+    "high_impact": {
+     "label": "yes",
+     "confidence": 0.98
+    },
+    "needs_escalation": {
+     "label": "no",
+     "confidence": 0.85
+    },
+    "action": {
+     "label": "prioritize",
+     "confidence": 0.92
+    }
+   },
+   "llm_ms": 28942.43439999991,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 3,
+   "expected": {
+    "sufficient_info": "no",
+    "high_impact": "no",
+    "needs_escalation": "no",
+    "action": "request_info"
+   },
+   "decider": {
+    "sufficient_info": {
+     "label": "no",
+     "confidence": 0.7912
+    },
+    "high_impact": {
+     "label": "yes",
+     "confidence": 0.549
+    },
+    "needs_escalation": {
+     "label": "yes",
+     "confidence": 0.5683
+    },
+    "action": {
+     "label": "request_info",
+     "confidence": 0.601
+    }
+   },
+   "decider_ms": 5838.877300000604,
+   "decider_server_ms": 4944.1,
+   "llm": {
+    "sufficient_info": {
+     "label": "no",
+     "confidence": 1.0
+    },
+    "high_impact": {
+     "label": "no",
+     "confidence": 0.5
+    },
+    "needs_escalation": {
+     "label": "yes",
+     "confidence": 0.8
+    },
+    "action": {
+     "label": "request_info",
+     "confidence": 1.0
+    }
+   },
+   "llm_ms": 29213.071000000127,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 4,
+   "expected": {
+    "sufficient_info": "yes",
+    "high_impact": "yes",
+    "needs_escalation": "yes",
+    "action": "escalate"
+   },
+   "decider": {
+    "sufficient_info": {
+     "label": "yes",
+     "confidence": 0.8386
+    },
+    "high_impact": {
+     "label": "yes",
+     "confidence": 0.8718
+    },
+    "needs_escalation": {
+     "label": "no",
+     "confidence": 0.75
+    },
+    "action": {
+     "label": "prioritize",
+     "confidence": 0.5121
+    }
+   },
+   "decider_ms": 6800.0299999985145,
+   "decider_server_ms": 5834.7,
+   "llm": {
+    "sufficient_info": {
+     "label": "yes",
+     "confidence": 0.95
+    },
+    "high_impact": {
+     "label": "yes",
+     "confidence": 0.98
+    },
+    "needs_escalation": {
+     "label": "yes",
+     "confidence": 0.92
+    },
+    "action": {
+     "label": "escalate",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 25954.57390000047,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 5,
+   "expected": {
+    "sufficient_info": "yes",
+    "high_impact": "no",
+    "needs_escalation": "no",
+    "action": "prioritize"
+   },
+   "decider": {
+    "sufficient_info": {
+     "label": "yes",
+     "confidence": 0.8925
+    },
+    "high_impact": {
+     "label": "no",
+     "confidence": 0.6857
+    },
+    "needs_escalation": {
+     "label": "no",
+     "confidence": 0.7347
+    },
+    "action": {
+     "label": "prioritize",
+     "confidence": 0.5139
+    }
+   },
+   "decider_ms": 6001.295300000493,
+   "decider_server_ms": 5047.0,
+   "llm": {
+    "sufficient_info": {
+     "label": "yes",
+     "confidence": 1.0
+    },
+    "high_impact": {
+     "label": "no",
+     "confidence": 1.0
+    },
+    "needs_escalation": {
+     "label": "no",
+     "confidence": 1.0
+    },
+    "action": {
+     "label": "prioritize",
+     "confidence": 1.0
+    }
+   },
+   "llm_ms": 25941.12380000115,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 6,
+   "expected": {
+    "sufficient_info": "yes",
+    "high_impact": "no",
+    "needs_escalation": "no",
+    "action": "investigate"
+   },
+   "decider": {
+    "sufficient_info": {
+     "label": "yes",
+     "confidence": 0.9041
+    },
+    "high_impact": {
+     "label": "yes",
+     "confidence": 0.6328
+    },
+    "needs_escalation": {
+     "label": "no",
+     "confidence": 0.7128
+    },
+    "action": {
+     "label": "prioritize",
+     "confidence": 0.4835
+    }
+   },
+   "decider_ms": 6752.242399999886,
+   "decider_server_ms": 5897.0,
+   "llm": {
+    "sufficient_info": {
+     "label": "yes",
+     "confidence": 0.95
+    },
+    "high_impact": {
+     "label": "no",
+     "confidence": 0.85
+    },
+    "needs_escalation": {
+     "label": "no",
+     "confidence": 0.75
+    },
+    "action": {
+     "label": "prioritize",
+     "confidence": 0.8
+    }
+   },
+   "llm_ms": 26097.111799999766,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 7,
+   "expected": {
+    "sufficient_info": "no",
+    "high_impact": "no",
+    "needs_escalation": "no",
+    "action": "request_info"
+   },
+   "decider": {
+    "sufficient_info": {
+     "label": "yes",
+     "confidence": 0.7235
+    },
+    "high_impact": {
+     "label": "no",
+     "confidence": 0.5197
+    },
+    "needs_escalation": {
+     "label": "no",
+     "confidence": 0.7133
+    },
+    "action": {
+     "label": "prioritize",
+     "confidence": 0.5033
+    }
+   },
+   "decider_ms": 6677.314099999421,
+   "decider_server_ms": 5828.8,
+   "llm": {
+    "sufficient_info": {
+     "label": "yes",
+     "confidence": 0.9
+    },
+    "high_impact": {
+     "label": "no",
+     "confidence": 0.85
+    },
+    "needs_escalation": {
+     "label": "no",
+     "confidence": 0.9
+    },
+    "action": {
+     "label": "prioritize",
+     "confidence": 0.85
+    }
+   },
+   "llm_ms": 25905.490799999825,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 8,
+   "expected": {
+    "sufficient_info": "yes",
+    "high_impact": "yes",
+    "needs_escalation": "yes",
+    "action": "escalate"
+   },
+   "decider": {
+    "sufficient_info": {
+     "label": "yes",
+     "confidence": 0.8489
+    },
+    "high_impact": {
+     "label": "yes",
+     "confidence": 0.9357
+    },
+    "needs_escalation": {
+     "label": "no",
+     "confidence": 0.6545
+    },
+    "action": {
+     "label": "escalate",
+     "confidence": 0.4294
+    }
+   },
+   "decider_ms": 5914.969499999643,
+   "decider_server_ms": 5046.0,
+   "llm": {
+    "sufficient_info": {
+     "label": "yes",
+     "confidence": 1.0
+    },
+    "high_impact": {
+     "label": "yes",
+     "confidence": 1.0
+    },
+    "needs_escalation": {
+     "label": "yes",
+     "confidence": 1.0
+    },
+    "action": {
+     "label": "escalate",
+     "confidence": 1.0
+    }
+   },
+   "llm_ms": 25496.273299999302,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 9,
+   "expected": {
+    "sufficient_info": "yes",
+    "high_impact": "no",
+    "needs_escalation": "no",
+    "action": "prioritize"
+   },
+   "decider": {
+    "sufficient_info": {
+     "label": "yes",
+     "confidence": 0.9147
+    },
+    "high_impact": {
+     "label": "no",
+     "confidence": 0.5439
+    },
+    "needs_escalation": {
+     "label": "no",
+     "confidence": 0.785
+    },
+    "action": {
+     "label": "prioritize",
+     "confidence": 0.5771
+    }
+   },
+   "decider_ms": 6755.341100000805,
+   "decider_server_ms": 5795.8,
+   "llm": {
+    "sufficient_info": {
+     "label": "yes",
+     "confidence": 1.0
+    },
+    "high_impact": {
+     "label": "no",
+     "confidence": 1.0
+    },
+    "needs_escalation": {
+     "label": "no",
+     "confidence": 1.0
+    },
+    "action": {
+     "label": "prioritize",
+     "confidence": 1.0
+    }
+   },
+   "llm_ms": 25698.523099999875,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 10,
+   "expected": {
+    "sufficient_info": "yes",
+    "high_impact": "yes",
+    "needs_escalation": "no",
+    "action": "investigate"
+   },
+   "decider": {
+    "sufficient_info": {
+     "label": "yes",
+     "confidence": 0.9362
+    },
+    "high_impact": {
+     "label": "yes",
+     "confidence": 0.676
+    },
+    "needs_escalation": {
+     "label": "no",
+     "confidence": 0.7364
+    },
+    "action": {
+     "label": "prioritize",
+     "confidence": 0.6193
+    }
+   },
+   "decider_ms": 6342.254400000456,
+   "decider_server_ms": 5301.1,
+   "llm": {
+    "sufficient_info": {
+     "label": "yes",
+     "confidence": 1.0
+    },
+    "high_impact": {
+     "label": "no",
+     "confidence": 0.95
+    },
+    "needs_escalation": {
+     "label": "no",
+     "confidence": 0.85
+    },
+    "action": {
+     "label": "prioritize",
+     "confidence": 0.9
+    }
+   },
+   "llm_ms": 25928.64279999958,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 11,
+   "expected": {
+    "sufficient_info": "yes",
+    "high_impact": "yes",
+    "needs_escalation": "yes",
+    "action": "escalate"
+   },
+   "decider": {
+    "sufficient_info": {
+     "label": "yes",
+     "confidence": 0.889
+    },
+    "high_impact": {
+     "label": "yes",
+     "confidence": 0.8787
+    },
+    "needs_escalation": {
+     "label": "no",
+     "confidence": 0.7219
+    },
+    "action": {
+     "label": "prioritize",
+     "confidence": 0.5315
+    }
+   },
+   "decider_ms": 6625.1720000000205,
+   "decider_server_ms": 5866.3,
+   "llm": {
+    "sufficient_info": {
+     "label": "yes",
+     "confidence": 1.0
+    },
+    "high_impact": {
+     "label": "yes",
+     "confidence": 1.0
+    },
+    "needs_escalation": {
+     "label": "yes",
+     "confidence": 1.0
+    },
+    "action": {
+     "label": "escalate",
+     "confidence": 1.0
+    }
+   },
+   "llm_ms": 25905.48569999919,
+   "llm_cost": 0.0
+  }
+ ],
+ "summary": {
+  "decider": {
+   "accuracy": 0.7292,
+   "decisions": 48,
+   "per_question": {
+    "sufficient_info": 0.9167,
+    "high_impact": 0.8333,
+    "needs_escalation": 0.6667,
+    "action": 0.5
+   },
+   "latency_p50_ms": 6625.2,
+   "latency_p95_ms": 6800.0,
+   "usd_per_1k_decisions": 0.035,
+   "confident_share": 0.5625,
+   "accuracy_when_confident": 0.8889,
+   "sent_to_human_at_threshold": 21
+  },
+  "llm": {
+   "accuracy": 0.8333,
+   "decisions": 48,
+   "per_question": {
+    "sufficient_info": 0.9167,
+    "high_impact": 0.8333,
+    "needs_escalation": 0.9167,
+    "action": 0.6667
+   },
+   "latency_p50_ms": 25954.6,
+   "latency_p95_ms": 28942.4,
+   "usd_per_1k_decisions": 0.0,
+   "confident_share": 0.9792,
+   "accuracy_when_confident": 0.8298,
+   "sent_to_human_at_threshold": 1
+  },
+  "speedup_p50": 3.92
+ },
+ "threshold": 0.7,
+ "llm_model": "qwen3.5-4b",
+ "llm_provider": "ugmdu",
+ "llm_where": "AWS User Group Madurai cloud (qwen3.5-4b)",
+ "decider_url": "https://da25tnxy06gjk.cloudfront.net",
+ "decider_mode": "ugmdu",
+ "ran_at": 1792693965.8680217,
+ "split": "test"
+}

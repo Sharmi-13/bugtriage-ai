@@ -1,0 +1,21 @@
+title: "BugTriage AI — Strands Decider 2B decides the action before the LLM explains it"
+pitch: "An AI bug triage agent for developers and QA teams: Strands Decider 2B classifies every report before the LLM says a word."
+features:
+  - "accept natural-language bug reports with any or all fields"
+  - "run Strands Decider 2B on every report before the LLM responds"
+  - "return a structured verdict: priority, action, evidence, and next steps"
+  - "handle missing information, conflicting signals, and critical escalations"
+  - "run on Amazon Bedrock AgentCore Runtime"
+eager: false
+intro: "BugTriage AI runs on Amazon Bedrock. Strands Decider 2B evaluates every bug report and decides the action — prioritize, request information, investigate, or escalate — before the LLM composes the explanation."
+intro_normal: "BugTriage AI runs on Amazon Bedrock AgentCore Runtime. Strands Decider 2B classifies every bug report and the LLM explains the verdict."
+turns:
+  - say: "Login fails with HTTP 500 for approximately 500 users after today's deployment. No workaround is available."
+    narrate: "A high-impact production bug with clear evidence — the decider should escalate or assign Critical priority."
+  - say: "There's a dropdown label overlapping a button on mobile, but only on screens under 375px wide. Landscape mode fixes it."
+    narrate: "Low-impact cosmetic issue with a workaround — the decider should assign Low priority and recommend prioritize."
+  - say: "The app is crashing on startup. I don't know how many users are affected or what the error is."
+    narrate: "Missing critical fields — the decider should request more information before triage proceeds."
+  - say: "The admin panel is accessible without logging in — anyone can navigate to /admin and see it."
+    narrate: "Security vulnerability with critical impact — the decider should escalate immediately."
+outro: "One decider call per bug report, four typed answers, calibrated confidence, and Amazon Bedrock for the explanation."

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "BUG-001",
+    "title": "Login failure after deployment",
+    "description": "Users cannot log in after the latest application deployment. The login page loads but submitting credentials returns a 500 error.",
+    "error_message": "HTTP 500 — Internal Server Error",
+    "users_affected": "~500",
+    "severity": "High",
+    "steps_to_reproduce": "1. Navigate to login page. 2. Enter valid credentials. 3. Click Login.",
+    "workaround": "None known"
+  },
+  {
+    "id": "BUG-002",
+    "title": "Dropdown label overlaps button on mobile",
+    "description": "On screens narrower than 375px, the category dropdown label overlaps the submit button in the new filter panel.",
+    "error_message": "None — visual only",
+    "users_affected": "3 (QA team only, reproduced on iPhone SE)",
+    "severity": "Low",
+    "steps_to_reproduce": "1. Open app on iPhone SE or narrow viewport. 2. Navigate to Products. 3. Open filter panel.",
+    "workaround": "Rotate to landscape mode or use desktop browser."
+  },
+  {
+    "id": "BUG-003",
+    "title": "App crashes on startup",
+    "description": "The mobile app crashes immediately on launch for users who upgraded to v3.2.1.",
+    "error_message": "",
+    "users_affected": "",
+    "severity": "",
+    "steps_to_reproduce": "",
+    "workaround": ""
+  },
+  {
+    "id": "BUG-004",
+    "title": "Payment fails intermittently",
+    "description": "Some users report payment failures at checkout, but the same card works on retry. Affects roughly 5% of transactions.",
+    "error_message": "Payment gateway timeout",
+    "users_affected": "~200 per day",
+    "severity": "High",
+    "steps_to_reproduce": "1. Add item to cart. 2. Proceed to checkout. 3. Enter card details. 4. Submit payment.",
+    "workaround": "Retry usually succeeds within 1-2 attempts."
+  },
+  {
+    "id": "BUG-005",
+    "title": "Export button does nothing",
+    "description": "Clicking the Export CSV button on the reports page does not trigger a download. No error is shown.",
+    "error_message": "No error message visible",
+    "users_affected": "1 (self-reported)",
+    "severity": "Low",
+    "steps_to_reproduce": "1. Navigate to Reports. 2. Click Export CSV.",
+    "workaround": "Copy-paste table manually."
+  },
+  {
+    "id": "BUG-006",
+    "title": "Database corruption after batch import",
+    "description": "Running the nightly batch import job corrupts user records when the input file contains Unicode characters above U+FFFF.",
+    "error_message": "UnicodeDecodeError: codec can't decode byte 0xf0",
+    "users_affected": "All users whose records were in the import batch (~1200)",
+    "severity": "Critical",
+    "steps_to_reproduce": "1. Prepare CSV with emoji in name field. 2. Run batch import script. 3. Query affected records.",
+    "workaround": "None — corrupted records require manual restore from backup."
+  }
+]
